@@ -1,0 +1,153 @@
+2025-10-15 01:54:28 - api - INFO - startup_event:154 - ============================================================
+2025-10-15 01:54:28 - api - INFO - startup_event:155 - Starting Insider Threat Detection API v2.0
+2025-10-15 01:54:28 - api - INFO - startup_event:156 - ============================================================
+2025-10-15 01:54:28 - api - INFO - startup_event:160 - Initializing database...
+2025-10-15 01:54:28 - api - INFO - startup_event:162 - ✅ Database initialized
+2025-10-15 01:54:28 - api - INFO - startup_event:168 - Loading hybrid model...
+2025-10-15 01:54:28 - api - INFO - startup_event:185 - Found models directory at: C:\Users\admin\Desktop\Projects\CyberIntelligence\LakshmanRekh\insider-detect\models
+2025-10-15 01:54:28 - api - ERROR - startup_event:200 - ❌ Error loading model: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\admin\Desktop\Projects\CyberIntelligence\LakshmanRekh\insider-detect\app\api.py", line 194, in startup_event
+    model = HybridModel(model_dir=model_path)
+  File "C:\Users\admin\Desktop\Projects\CyberIntelligence\LakshmanRekh\insider-detect\app\models\hybrid.py", line 108, in __init__
+    print("✅ XGBoost model loaded")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+2025-10-15 01:55:07 - api - INFO - startup_event:154 - ============================================================
+2025-10-15 01:55:07 - api - INFO - startup_event:155 - Starting Insider Threat Detection API v2.0
+2025-10-15 01:55:07 - api - INFO - startup_event:156 - ============================================================
+2025-10-15 01:55:07 - api - INFO - startup_event:160 - Initializing database...
+2025-10-15 01:55:07 - api - INFO - startup_event:162 - ✅ Database initialized
+2025-10-15 01:55:07 - api - INFO - startup_event:168 - Loading hybrid model...
+2025-10-15 01:55:07 - api - INFO - startup_event:185 - Found models directory at: C:\Users\admin\Desktop\Projects\CyberIntelligence\LakshmanRekh\insider-detect\models
+2025-10-15 01:55:07 - api - ERROR - startup_event:200 - ❌ Error loading model: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\admin\Desktop\Projects\CyberIntelligence\LakshmanRekh\insider-detect\app\api.py", line 194, in startup_event
+    model = HybridModel(model_dir=model_path)
+  File "C:\Users\admin\Desktop\Projects\CyberIntelligence\LakshmanRekh\insider-detect\app\models\hybrid.py", line 108, in __init__
+    print("✅ XGBoost model loaded")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+2025-10-15 01:55:47 - api - INFO - startup_event:154 - ============================================================
+2025-10-15 01:55:47 - api - INFO - startup_event:155 - Starting Insider Threat Detection API v2.0
+2025-10-15 01:55:47 - api - INFO - startup_event:156 - ============================================================
+2025-10-15 01:55:47 - api - INFO - startup_event:160 - Initializing database...
+2025-10-15 01:55:47 - api - INFO - startup_event:162 - Database initialized
+2025-10-15 01:55:47 - api - INFO - startup_event:168 - Loading hybrid model...
+2025-10-15 01:55:47 - api - INFO - startup_event:185 - Found models directory at: C:\Users\admin\Desktop\Projects\CyberIntelligence\LakshmanRekh\insider-detect\models
+2025-10-15 01:55:48 - api - INFO - startup_event:195 - Model loaded successfully!
+2025-10-15 01:55:48 - api - INFO - startup_event:196 -   - XGBoost weight: 0.60
+2025-10-15 01:55:48 - api - INFO - startup_event:197 -   - LSTM weight: 0.40
+2025-10-15 01:55:48 - api - INFO - startup_event:198 -   - Vocabulary size: 8
+2025-10-15 01:55:48 - api - INFO - startup_event:203 - ============================================================
+2025-10-15 01:55:48 - api - INFO - startup_event:204 - API Ready - Listening on 127.0.0.1:8000
+2025-10-15 01:55:48 - api - INFO - startup_event:205 - ============================================================
+2025-10-15 01:57:31 - api - INFO - infer_session:500 - Inference complete: session=b8c3f462, prob=0.175, alert=False, time=236.1ms
+2025-10-15 01:57:31 - api - INFO - infer_session:500 - Inference complete: session=d90b40e0, prob=0.272, alert=False, time=266.7ms
+2025-10-15 01:57:31 - api - INFO - infer_session:500 - Inference complete: session=1904e727, prob=0.175, alert=False, time=86.2ms
+2025-10-15 01:57:45 - api - INFO - infer_session:410 - Returned cached result for session b8c3f462
+2025-10-15 01:57:45 - api - INFO - infer_session:410 - Returned cached result for session d90b40e0
+2025-10-15 01:57:46 - api - INFO - infer_session:410 - Returned cached result for session 1904e727
+2025-10-15 01:58:15 - api - INFO - infer_session:410 - Returned cached result for session b8c3f462
+2025-10-15 01:58:15 - api - INFO - infer_session:410 - Returned cached result for session d90b40e0
+2025-10-15 01:58:15 - api - INFO - infer_session:410 - Returned cached result for session 1904e727
+2025-10-15 03:32:57 - api - INFO - startup_event:154 - ============================================================
+2025-10-15 03:32:57 - api - INFO - startup_event:155 - Starting Insider Threat Detection API v2.0
+2025-10-15 03:32:57 - api - INFO - startup_event:156 - ============================================================
+2025-10-15 03:32:57 - api - INFO - startup_event:160 - Initializing database...
+2025-10-15 03:32:57 - api - INFO - startup_event:162 - Database initialized
+2025-10-15 03:32:57 - api - INFO - startup_event:168 - Loading hybrid model...
+2025-10-15 03:32:57 - api - INFO - startup_event:185 - Found models directory at: C:\Users\admin\Desktop\Projects\CyberIntelligence\LakshmanRekh\insider-detect\models
+2025-10-15 03:32:58 - api - INFO - startup_event:195 - Model loaded successfully!
+2025-10-15 03:32:58 - api - INFO - startup_event:196 -   - XGBoost weight: 0.60
+2025-10-15 03:32:58 - api - INFO - startup_event:197 -   - LSTM weight: 0.40
+2025-10-15 03:32:58 - api - INFO - startup_event:198 -   - Vocabulary size: 8
+2025-10-15 03:32:58 - api - INFO - startup_event:203 - ============================================================
+2025-10-15 03:32:58 - api - INFO - startup_event:204 - API Ready - Listening on 127.0.0.1:8000
+2025-10-15 03:32:58 - api - INFO - startup_event:205 - ============================================================
+2025-10-15 03:33:15 - api - INFO - infer_session:500 - Inference complete: session=b8c3f462, prob=0.175, alert=False, time=199.7ms
+2025-10-15 03:33:15 - api - INFO - infer_session:500 - Inference complete: session=d90b40e0, prob=0.272, alert=False, time=212.3ms
+2025-10-15 03:33:15 - api - INFO - infer_session:500 - Inference complete: session=1904e727, prob=0.175, alert=False, time=76.5ms
+2025-10-15 03:38:34 - api - INFO - infer_session:500 - Inference complete: session=demo_176, prob=0.272, alert=False, time=79.2ms
+2025-10-15 03:38:39 - api - INFO - infer_session:500 - Inference complete: session=demo_176, prob=0.272, alert=False, time=96.2ms
+2025-10-15 03:38:46 - api - INFO - infer_session:500 - Inference complete: session=demo_176, prob=0.272, alert=False, time=77.8ms
+2025-10-15 03:39:01 - api - INFO - infer_session:500 - Inference complete: session=demo_176, prob=0.272, alert=False, time=97.1ms
+2025-10-15 03:39:02 - api - INFO - infer_session:500 - Inference complete: session=demo_176, prob=0.175, alert=False, time=104.8ms
+2025-10-15 03:53:24 - api - INFO - infer_session:500 - Inference complete: session=demo_176, prob=0.272, alert=False, time=88.0ms
+2025-10-15 04:25:15 - api - INFO - startup_event:154 - ============================================================
+2025-10-15 04:25:15 - api - INFO - startup_event:155 - Starting Insider Threat Detection API v2.0
+2025-10-15 04:25:15 - api - INFO - startup_event:156 - ============================================================
+2025-10-15 04:25:15 - api - INFO - startup_event:160 - Initializing database...
+2025-10-15 04:25:15 - api - INFO - startup_event:162 - Database initialized
+2025-10-15 04:25:15 - api - INFO - startup_event:168 - Loading hybrid model...
+2025-10-15 04:25:15 - api - INFO - startup_event:185 - Found models directory at: C:\Users\admin\Desktop\Projects\CyberIntelligence\LakshmanRekh\insider-detect\models
+2025-10-15 04:25:16 - api - INFO - startup_event:195 - Model loaded successfully!
+2025-10-15 04:25:16 - api - INFO - startup_event:196 -   - XGBoost weight: 0.60
+2025-10-15 04:25:16 - api - INFO - startup_event:197 -   - LSTM weight: 0.40
+2025-10-15 04:25:16 - api - INFO - startup_event:198 -   - Vocabulary size: 8
+2025-10-15 04:25:16 - api - INFO - startup_event:203 - ============================================================
+2025-10-15 04:25:16 - api - INFO - startup_event:204 - API Ready - Listening on 127.0.0.1:8000
+2025-10-15 04:25:16 - api - INFO - startup_event:205 - ============================================================
+2025-10-15 04:25:25 - api - INFO - infer_session:500 - Inference complete: session=b8c3f462, prob=0.175, alert=False, time=303.3ms
+2025-10-15 04:25:26 - api - INFO - infer_session:500 - Inference complete: session=d90b40e0, prob=0.272, alert=False, time=273.9ms
+2025-10-15 04:25:26 - api - INFO - infer_session:500 - Inference complete: session=1904e727, prob=0.175, alert=False, time=86.8ms
+2025-10-15 04:26:37 - api - INFO - infer_session:410 - Returned cached result for session b8c3f462
+2025-10-15 04:26:37 - api - INFO - infer_session:410 - Returned cached result for session d90b40e0
+2025-10-15 04:26:37 - api - INFO - infer_session:410 - Returned cached result for session 1904e727
+2025-10-15 04:28:50 - api - INFO - startup_event:154 - ============================================================
+2025-10-15 04:28:50 - api - INFO - startup_event:155 - Starting Insider Threat Detection API v2.0
+2025-10-15 04:28:50 - api - INFO - startup_event:156 - ============================================================
+2025-10-15 04:28:50 - api - INFO - startup_event:160 - Initializing database...
+2025-10-15 04:28:50 - api - INFO - startup_event:162 - Database initialized
+2025-10-15 04:28:50 - api - INFO - startup_event:168 - Loading hybrid model...
+2025-10-15 04:28:50 - api - INFO - startup_event:185 - Found models directory at: C:\Users\admin\Desktop\Projects\CyberIntelligence\LakshmanRekh\insider-detect\models
+2025-10-15 04:28:50 - api - INFO - startup_event:195 - Model loaded successfully!
+2025-10-15 04:28:50 - api - INFO - startup_event:196 -   - XGBoost weight: 0.60
+2025-10-15 04:28:50 - api - INFO - startup_event:197 -   - LSTM weight: 0.40
+2025-10-15 04:28:50 - api - INFO - startup_event:198 -   - Vocabulary size: 8
+2025-10-15 04:28:50 - api - INFO - startup_event:203 - ============================================================
+2025-10-15 04:28:50 - api - INFO - startup_event:204 - API Ready - Listening on 127.0.0.1:8000
+2025-10-15 04:28:50 - api - INFO - startup_event:205 - ============================================================
+2025-10-15 04:29:04 - api - INFO - infer_session:500 - Inference complete: session=b8c3f462, prob=0.175, alert=False, time=238.7ms
+2025-10-15 04:29:04 - api - INFO - infer_session:500 - Inference complete: session=d90b40e0, prob=0.272, alert=False, time=236.5ms
+2025-10-15 04:29:05 - api - INFO - infer_session:500 - Inference complete: session=1904e727, prob=0.175, alert=False, time=74.1ms
+2025-10-15 04:29:59 - api - INFO - startup_event:154 - ============================================================
+2025-10-15 04:29:59 - api - INFO - startup_event:155 - Starting Insider Threat Detection API v2.0
+2025-10-15 04:29:59 - api - INFO - startup_event:156 - ============================================================
+2025-10-15 04:29:59 - api - INFO - startup_event:160 - Initializing database...
+2025-10-15 04:29:59 - api - INFO - startup_event:162 - Database initialized
+2025-10-15 04:29:59 - api - INFO - startup_event:168 - Loading hybrid model...
+2025-10-15 04:29:59 - api - INFO - startup_event:185 - Found models directory at: C:\Users\admin\Desktop\Projects\CyberIntelligence\LakshmanRekh\insider-detect\models
+2025-10-15 04:29:59 - api - INFO - startup_event:195 - Model loaded successfully!
+2025-10-15 04:29:59 - api - INFO - startup_event:196 -   - XGBoost weight: 0.60
+2025-10-15 04:29:59 - api - INFO - startup_event:197 -   - LSTM weight: 0.40
+2025-10-15 04:29:59 - api - INFO - startup_event:198 -   - Vocabulary size: 8
+2025-10-15 04:29:59 - api - INFO - startup_event:203 - ============================================================
+2025-10-15 04:29:59 - api - INFO - startup_event:204 - API Ready - Listening on 127.0.0.1:8000
+2025-10-15 04:29:59 - api - INFO - startup_event:205 - ============================================================
+2025-10-15 04:30:13 - api - INFO - infer_session:500 - Inference complete: session=b8c3f462, prob=0.175, alert=False, time=268.0ms
+2025-10-15 04:30:13 - api - INFO - infer_session:500 - Inference complete: session=d90b40e0, prob=0.272, alert=False, time=265.6ms
+2025-10-15 04:30:13 - api - INFO - infer_session:500 - Inference complete: session=1904e727, prob=0.175, alert=False, time=81.9ms
+2025-10-15 04:33:38 - api - INFO - startup_event:154 - ============================================================
+2025-10-15 04:33:38 - api - INFO - startup_event:155 - Starting Insider Threat Detection API v2.0
+2025-10-15 04:33:38 - api - INFO - startup_event:156 - ============================================================
+2025-10-15 04:33:38 - api - INFO - startup_event:160 - Initializing database...
+2025-10-15 04:33:38 - api - INFO - startup_event:162 - Database initialized
+2025-10-15 04:33:38 - api - INFO - startup_event:168 - Loading hybrid model...
+2025-10-15 04:33:38 - api - INFO - startup_event:185 - Found models directory at: C:\Users\admin\Desktop\Projects\CyberIntelligence\LakshmanRekh\insider-detect\models
+2025-10-15 04:33:38 - api - INFO - startup_event:195 - Model loaded successfully!
+2025-10-15 04:33:38 - api - INFO - startup_event:196 -   - XGBoost weight: 0.60
+2025-10-15 04:33:38 - api - INFO - startup_event:197 -   - LSTM weight: 0.40
+2025-10-15 04:33:38 - api - INFO - startup_event:198 -   - Vocabulary size: 8
+2025-10-15 04:33:38 - api - INFO - startup_event:203 - ============================================================
+2025-10-15 04:33:38 - api - INFO - startup_event:204 - API Ready - Listening on 127.0.0.1:8000
+2025-10-15 04:33:38 - api - INFO - startup_event:205 - ============================================================
+2025-10-15 04:33:50 - api - INFO - infer_session:500 - Inference complete: session=b8c3f462, prob=0.175, alert=False, time=248.3ms
+2025-10-15 04:33:50 - api - INFO - infer_session:500 - Inference complete: session=d90b40e0, prob=0.272, alert=False, time=236.6ms
+2025-10-15 04:33:50 - api - INFO - infer_session:500 - Inference complete: session=1904e727, prob=0.175, alert=False, time=91.9ms
