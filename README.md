@@ -1,4 +1,4 @@
-# 🛡️ Insider Threat Detection System
+# Insider Threat Detection System
 
 **Version 2.0** - Production-Ready ML System for Real-Time Insider Threat Detection
 
@@ -12,26 +12,26 @@
 
 ---
 
-## 🎯 Overview
+## Overview
 
 A production-ready machine learning system for detecting insider threats using a hybrid ensemble approach combining **XGBoost** (60%) and **LSTM** (40%) models. The system provides real-time threat detection through a FastAPI REST API with comprehensive monitoring, logging, and persistence capabilities, complemented by both a Streamlit and a modern React dashboard for visualization and interaction.
 
-### ✨ Key Features
+### Key Features
 
-- **🧠 Hybrid ML Ensemble** - Balanced detection using XGBoost + LSTM
-- **⚡ Real-time API** - FastAPI with async support and auto-documentation
-- **🏭 Production-Ready** - Logging, metrics, database persistence, caching
-- **⚙️ Configurable** - YAML + environment variables
-- **📊 Observable** - Prometheus metrics, structured logging, health checks
-- **🔄 Versioned** - Model version management and rollback
-- **🧪 Tested** - Unit tests with pytest
-- **📚 Well-Documented** - Comprehensive guides and API documentation
-- **🎨 Dual Dashboards** - Streamlit for quick insights, React for modern UI/UX
-- **🚀 One-Click Deploy** - PowerShell orchestration script
+- **Hybrid ML Ensemble** - Balanced detection using XGBoost + LSTM
+- **Real-time API** - FastAPI with async support and auto-documentation
+- **Production-Ready** - Logging, metrics, database persistence, caching
+- **Configurable** - YAML + environment variables
+- **Observable** - Prometheus metrics, structured logging, health checks
+- **Versioned** - Model version management and rollback
+- **Tested** - Unit tests with pytest
+- **Well-Documented** - Comprehensive guides and API documentation
+- **Dual Dashboards** - Streamlit for quick insights, React for modern UI/UX
+- **One-Click Deploy** - PowerShell orchestration script
 
 ---
 
-## 🚀 Quick Start (3 Minutes)
+## Quick Start (3 Minutes)
 
 ### 1. Clone & Install
 
@@ -64,14 +64,14 @@ This command will:
 
 ### 3. Access Your System
 
-- **🎨 React Dashboard**: `http://localhost:5173` (Modern UI/UX)
-- **📊 Streamlit Dashboard**: `http://localhost:8501` (Quick Analytics)
-- **📖 FastAPI Swagger UI**: `http://127.0.0.1:8000/docs`
-- **🔧 FastAPI OpenAPI Spec**: `http://127.0.0.1:8000/openapi.json`
+- **React Dashboard**: `http://localhost:5173` (Modern UI/UX)
+- **Streamlit Dashboard**: `http://localhost:8501` (Quick Analytics)
+- **FastAPI Swagger UI**: `http://127.0.0.1:8000/docs`
+- **FastAPI OpenAPI Spec**: `http://127.0.0.1:8000/openapi.json`
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -106,7 +106,7 @@ This command will:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 insider-detect/
@@ -145,7 +145,7 @@ insider-detect/
 
 ---
 
-## 🔧 Configuration
+## Configuration
 
 Three flexible ways to configure the system:
 
@@ -190,7 +190,7 @@ python -m app.api
 
 ---
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### Health & Info
 
@@ -234,7 +234,7 @@ curl -X POST http://localhost:8000/infer_session \
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run all tests
@@ -252,7 +252,7 @@ open htmlcov/index.html  # View coverage
 
 ---
 
-## 🎓 Training Models
+## Training Models
 
 Train new models using the training package:
 
@@ -286,7 +286,7 @@ python -m training.trainers.attention_trainer \
 
 ---
 
-## 📊 Monitoring & Observability
+## Monitoring & Observability
 
 ### Logs
 
@@ -331,7 +331,7 @@ print(f"Alert rate: {stats['alert_rate']:.1%}")
 
 ---
 
-## 🐳 Docker Deployment
+## Docker Deployment
 
 ```bash
 # Build image
@@ -350,7 +350,7 @@ docker-compose up -d
 
 ---
 
-## 🛠️ Development Setup
+## Development Setup
 
 ```bash
 # Install development dependencies
@@ -369,7 +369,7 @@ flake8 app/ training/
 
 ---
 
-## 📈 Performance Metrics
+## Performance Metrics
 
 | Metric | Value | Description |
 |--------|-------|-------------|
@@ -382,7 +382,7 @@ flake8 app/ training/
 
 ---
 
-## 🔒 Security Features
+## Security Features
 
 ### Input Validation
 
@@ -405,7 +405,7 @@ Reduces false positives by:
 
 ---
 
-## 🆕 What's New in v2.0
+## What's New in v2.0
 
 ### Major Restructuring
 
@@ -439,7 +439,7 @@ Reduces false positives by:
 
 ---
 
-## 📅 Version History
+## Version History
 
 | Version | Date | Highlights |
 |---------|------|------------|
@@ -448,7 +448,7 @@ Reduces false positives by:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Please follow these steps:
 
@@ -463,13 +463,13 @@ We welcome contributions! Please follow these steps:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file.
 
 ---
 
-## 👥 Authors & Acknowledgments
+## Authors & Acknowledgments
 
 **Development Team:**
 - Insider Threat Detection Team
@@ -486,7 +486,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📞 Support & Contact
+## Support & Contact
 
 - **Documentation**: [docs/](docs/)
 - **Bug Reports**: [GitHub Issues](https://github.com/Av7danger/insider-detect/issues)
@@ -495,7 +495,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
 ### Coming Soon
 - [ ] Authentication & authorization (JWT)
@@ -511,12 +511,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## ⭐ Star History
+## Star History
 
 If you find this project helpful, please consider giving it a star!
 
 ---
 
-**Made with ❤️ by the Insider Threat Detection Team**
+**Made with care by the Insider Threat Detection Team**
 
 *Last updated: October 16, 2025*

@@ -1,3 +1,0 @@
-[console_scripts]
-insider-detect = app.api:main
-insider-train = training.train:main
