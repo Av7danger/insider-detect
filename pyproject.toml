@@ -1,0 +1,186 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "insider-detect"
+version = "2.0.0"
+description = "Production-ready ML system for insider threat detection"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Insider Threat Detection Team", email = "team@insider-detect.com"}
+]
+maintainers = [
+    {name = "Insider Threat Detection Team", email = "team@insider-detect.com"}
+]
+keywords = ["machine-learning", "security", "threat-detection", "insider-threat", "mlops"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Security",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.24.0",
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+    "scikit-learn>=1.3.0",
+    "xgboost>=2.0.0",
+    "tensorflow>=2.15.0",
+    "numpy>=1.24.0",
+    "pandas>=2.1.0",
+    "scipy>=1.11.0",
+    "sqlalchemy>=2.0.0",
+    "alembic>=1.13.0",
+    "redis>=5.0.0",
+    "aioredis>=2.0.0",
+    "prometheus-client>=0.19.0",
+    "structlog>=23.2.0",
+    "python-dotenv>=1.0.0",
+    "pyyaml>=6.0.0",
+    "click>=8.1.0",
+    "rich>=13.7.0",
+    "typer>=0.9.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.11.0",
+    "isort>=5.12.0",
+    "flake8>=6.1.0",
+    "mypy>=1.7.0",
+    "pre-commit>=3.5.0",
+]
+prod = [
+    "gunicorn>=21.2.0",
+    "docker>=6.1.0",
+    "asyncpg>=0.29.0",
+    "psycopg2-binary>=2.9.0",
+]
+monitoring = [
+    "prometheus-client>=0.19.0",
+    "jaeger-client>=4.8.0",
+    "opentelemetry-api>=1.20.0",
+    "opentelemetry-sdk>=1.20.0",
+    "opentelemetry-instrumentation-fastapi>=0.41b0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Av7danger/insider-detect"
+Documentation = "https://github.com/Av7danger/insider-detect#readme"
+Repository = "https://github.com/Av7danger/insider-detect.git"
+Issues = "https://github.com/Av7danger/insider-detect/issues"
+Changelog = "https://github.com/Av7danger/insider-detect/blob/main/CHANGELOG.md"
+
+[project.scripts]
+insider-detect = "insider_detect.cli:main"
+insider-detect-api = "insider_detect.api.app:run_server"
+insider-detect-train = "insider_detect.training.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.black]
+line-length = 88
+target-version = ['py39', 'py310', 'py311', 'py312']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88
+known_first_party = ["insider_detect"]
+known_third_party = ["fastapi", "pydantic", "sqlalchemy", "tensorflow", "sklearn"]
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+strict_equality = true
+
+[[tool.mypy.overrides]]
+module = [
+    "tensorflow.*",
+    "sklearn.*",
+    "xgboost.*",
+    "redis.*",
+    "aioredis.*",
+]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q --strict-markers --strict-config"
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks tests as integration tests",
+    "e2e: marks tests as end-to-end tests",
+    "unit: marks tests as unit tests",
+]
+
+[tool.coverage.run]
+source = ["src"]
+omit = [
+    "*/tests/*",
+    "*/test_*",
+    "*/__pycache__/*",
+    "*/migrations/*",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+]
