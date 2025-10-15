@@ -1,3 +1,5 @@
+<div align="center">
+
 # Insider Threat Detection System
 
 **Version 2.0** - Production-Ready ML System for Real-Time Insider Threat Detection
@@ -10,28 +12,50 @@
 
 > An intelligent ML-powered system that detects insider threats in real-time using hybrid ensemble learning with dual dashboard interfaces.
 
+</div>
+
 ---
 
 ## Overview
 
+<div align="center">
+
 A production-ready machine learning system for detecting insider threats using a hybrid ensemble approach combining **XGBoost** (60%) and **LSTM** (40%) models. The system provides real-time threat detection through a FastAPI REST API with comprehensive monitoring, logging, and persistence capabilities, complemented by both a Streamlit and a modern React dashboard for visualization and interaction.
+
+</div>
 
 ### Key Features
 
+<table align="center">
+<tr>
+<td align="center" width="50%">
+
+**Core ML & API**
 - **Hybrid ML Ensemble** - Balanced detection using XGBoost + LSTM
 - **Real-time API** - FastAPI with async support and auto-documentation
 - **Production-Ready** - Logging, metrics, database persistence, caching
 - **Configurable** - YAML + environment variables
 - **Observable** - Prometheus metrics, structured logging, health checks
+
+</td>
+<td align="center" width="50%">
+
+**Development & Deployment**
 - **Versioned** - Model version management and rollback
 - **Tested** - Unit tests with pytest
 - **Well-Documented** - Comprehensive guides and API documentation
 - **Dual Dashboards** - Streamlit for quick insights, React for modern UI/UX
 - **One-Click Deploy** - PowerShell orchestration script
 
+</td>
+</tr>
+</table>
+
 ---
 
 ## Quick Start (3 Minutes)
+
+<div align="center">
 
 ### 1. Clone & Install
 
@@ -53,7 +77,7 @@ Use the PowerShell script to start all services (API, Streamlit, React dashboard
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\run_everything.ps1 -RunDemo -OpenBrowser
 ```
 
-This command will:
+**This command will:**
 - Stop any previously running API, Streamlit, or React dev servers
 - Start the FastAPI backend on `http://127.0.0.1:8000`
 - Start the Streamlit dashboard on `http://localhost:8501`
@@ -64,14 +88,46 @@ This command will:
 
 ### 3. Access Your System
 
-- **React Dashboard**: `http://localhost:5173` (Modern UI/UX)
-- **Streamlit Dashboard**: `http://localhost:8501` (Quick Analytics)
-- **FastAPI Swagger UI**: `http://127.0.0.1:8000/docs`
-- **FastAPI OpenAPI Spec**: `http://127.0.0.1:8000/openapi.json`
+<table align="center">
+<tr>
+<td align="center" width="25%">
+
+**React Dashboard**  
+`http://localhost:5173`  
+*Modern UI/UX*
+
+</td>
+<td align="center" width="25%">
+
+**Streamlit Dashboard**  
+`http://localhost:8501`  
+*Quick Analytics*
+
+</td>
+<td align="center" width="25%">
+
+**FastAPI Swagger UI**  
+`http://127.0.0.1:8000/docs`  
+*API Documentation*
+
+</td>
+<td align="center" width="25%">
+
+**OpenAPI Spec**  
+`http://127.0.0.1:8000/openapi.json`  
+*API Schema*
+
+</td>
+</tr>
+</table>
+
+</div>
 
 ---
 
 ## Architecture
+
+<div align="center">
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -103,6 +159,8 @@ This command will:
 │  └─────────────────┘  └─────────────────┘                  │
 └─────────────────────────────────────────────────────────────┘
 ```
+
+</div>
 
 ---
 
@@ -371,14 +429,18 @@ flake8 app/ training/
 
 ## Performance Metrics
 
+<div align="center">
+
 | Metric | Value | Description |
-|--------|-------|-------------|
+|:------:|:-----:|:-----------:|
 | **Precision** | 0.667 | 2 out of 3 alerts are real threats |
 | **Recall** | 0.800 | Catches 80% of insider attacks |
 | **F1-Score** | 0.727 | Balanced performance |
 | **ROC-AUC** | 0.850 | Strong discriminatory power |
 | **Latency** | <300ms | Real-time inference |
 | **Throughput** | 100 req/min | Default rate limit |
+
+</div>
 
 ---
 
@@ -441,82 +503,168 @@ Reduces false positives by:
 
 ## Version History
 
+<div align="center">
+
 | Version | Date | Highlights |
-|---------|------|------------|
+|:-------:|:----:|:----------:|
 | **2.0.0** | Oct 2025 | Major restructuring, new package layout, React dashboard, orchestration script |
 | 1.0.0 | Jun 2025 | Initial release with hybrid ensemble |
+
+</div>
 
 ---
 
 ## Contributing
 
+<div align="center">
+
 We welcome contributions! Please follow these steps:
 
+</div>
+
+<table align="center">
+<tr>
+<td align="center" width="50%">
+
+**Development Steps**
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
 3. Make your changes
 4. Run tests (`pytest tests/ -v`)
+
+</td>
+<td align="center" width="50%">
+
+**Submission Steps**
 5. Format code (`black . && isort .`)
 6. Commit (`git commit -m 'Add amazing feature'`)
 7. Push (`git push origin feature/amazing-feature`)
 8. Open a Pull Request
 
+</td>
+</tr>
+</table>
+
 ---
 
 ## License
 
+<div align="center">
+
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file.
+
+</div>
 
 ---
 
 ## Authors & Acknowledgments
 
-**Development Team:**
-- Insider Threat Detection Team
+<div align="center">
+
+**Development Team:**  
+Insider Threat Detection Team
 
 **Built With:**
+
+<table align="center">
+<tr>
+<td align="center" width="50%">
+
+**Backend & ML**
 - [FastAPI](https://fastapi.tiangolo.com/) - Web framework
 - [XGBoost](https://xgboost.ai/) - Gradient boosting
 - [TensorFlow](https://www.tensorflow.org/) - Deep learning
 - [SQLAlchemy](https://www.sqlalchemy.org/) - Database ORM
+
+</td>
+<td align="center" width="50%">
+
+**Frontend & Tools**
 - [Prometheus](https://prometheus.io/) - Monitoring
 - [React](https://react.dev/) - Frontend library
 - [Vite](https://vitejs.dev/) - Frontend tooling
 - [Tailwind CSS](https://tailwindcss.com/) - CSS framework
 
+</td>
+</tr>
+</table>
+
+</div>
+
 ---
 
 ## Support & Contact
 
+<div align="center">
+
+<table align="center">
+<tr>
+<td align="center" width="50%">
+
+**Documentation & Support**
 - **Documentation**: [docs/](docs/)
 - **Bug Reports**: [GitHub Issues](https://github.com/Av7danger/insider-detect/issues)
+
+</td>
+<td align="center" width="50%">
+
+**Community & Contact**
 - **Discussions**: [GitHub Discussions](https://github.com/Av7danger/insider-detect/discussions)
 - **Email**: support@example.com
+
+</td>
+</tr>
+</table>
+
+</div>
 
 ---
 
 ## Roadmap
 
-### Coming Soon
+<div align="center">
+
+<table align="center">
+<tr>
+<td align="center" width="50%">
+
+**Coming Soon**
 - [ ] Authentication & authorization (JWT)
 - [ ] Kafka streaming integration
 - [ ] Model explainability UI (SHAP/LIME)
 - [ ] A/B testing framework
 
-### Future Plans
+</td>
+<td align="center" width="50%">
+
+**Future Plans**
 - [ ] Additional ML models (Isolation Forest, Autoencoders)
 - [ ] Data drift detection
 - [ ] Mobile app
 - [ ] Multi-tenancy support
 
+</td>
+</tr>
+</table>
+
+</div>
+
 ---
 
 ## Star History
 
+<div align="center">
+
 If you find this project helpful, please consider giving it a star!
 
+</div>
+
 ---
+
+<div align="center">
 
 **Made with care by the Insider Threat Detection Team**
 
 *Last updated: October 16, 2025*
+
+</div>
