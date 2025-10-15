@@ -1,0 +1,28 @@
+name: Merge master into main
+
+on:
+  workflow_dispatch:
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+      
+      - name: Configure git
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+      
+      - name: Merge master into main
+        run: |
+          git fetch origin master:master
+          git merge master --allow-unrelated-histories -m "Merge master into main to consolidate all branches"
+      
+      - name: Push changes
+        run: |
+          git push origin main
