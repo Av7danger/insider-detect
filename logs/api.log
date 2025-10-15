@@ -151,3 +151,20 @@ UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 
 2025-10-15 04:33:50 - api - INFO - infer_session:500 - Inference complete: session=b8c3f462, prob=0.175, alert=False, time=248.3ms
 2025-10-15 04:33:50 - api - INFO - infer_session:500 - Inference complete: session=d90b40e0, prob=0.272, alert=False, time=236.6ms
 2025-10-15 04:33:50 - api - INFO - infer_session:500 - Inference complete: session=1904e727, prob=0.175, alert=False, time=91.9ms
+2025-10-15 19:32:04 - api - INFO - startup_event:154 - ============================================================
+2025-10-15 19:32:04 - api - INFO - startup_event:155 - Starting Insider Threat Detection API v2.0
+2025-10-15 19:32:04 - api - INFO - startup_event:156 - ============================================================
+2025-10-15 19:32:04 - api - INFO - startup_event:160 - Initializing database...
+2025-10-15 19:32:04 - api - INFO - startup_event:162 - Database initialized
+2025-10-15 19:32:04 - api - INFO - startup_event:168 - Loading hybrid model...
+2025-10-15 19:32:04 - api - INFO - startup_event:185 - Found models directory at: C:\Users\admin\Desktop\Projects\CyberIntelligence\LakshmanRekh\insider-detect\models
+2025-10-15 19:32:05 - api - INFO - startup_event:195 - Model loaded successfully!
+2025-10-15 19:32:05 - api - INFO - startup_event:196 -   - XGBoost weight: 0.60
+2025-10-15 19:32:05 - api - INFO - startup_event:197 -   - LSTM weight: 0.40
+2025-10-15 19:32:05 - api - INFO - startup_event:198 -   - Vocabulary size: 8
+2025-10-15 19:32:05 - api - INFO - startup_event:203 - ============================================================
+2025-10-15 19:32:05 - api - INFO - startup_event:204 - API Ready - Listening on 127.0.0.1:8000
+2025-10-15 19:32:05 - api - INFO - startup_event:205 - ============================================================
+2025-10-15 19:33:39 - api - INFO - infer_session:500 - Inference complete: session=b8c3f462, prob=0.175, alert=False, time=381.7ms
+2025-10-15 19:33:39 - api - INFO - infer_session:500 - Inference complete: session=d90b40e0, prob=0.272, alert=False, time=235.3ms
+2025-10-15 19:33:39 - api - INFO - infer_session:500 - Inference complete: session=1904e727, prob=0.175, alert=False, time=71.8ms
