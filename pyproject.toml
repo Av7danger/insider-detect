@@ -53,6 +53,8 @@ dependencies = [
     "click>=8.1.0",
     "rich>=13.7.0",
     "typer>=0.9.0",
+    # Not directly required; pinned to avoid known urllib3 vulnerabilities.
+    "urllib3>=2.6.3",
 ]
 
 [project.optional-dependencies]
